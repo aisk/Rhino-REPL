@@ -7,8 +7,8 @@ import org.mozilla.javascript.EvaluatorException;
 import org.mozilla.javascript.EcmaError;
 
 public class RhinoVm {
-	Context cx = null;
-	Scriptable scope = null;
+	Context cx;
+	Scriptable scope;
 	
 	RhinoVm() {
 		cx = Context.enter();
