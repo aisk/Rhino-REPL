@@ -63,9 +63,7 @@ public class Main extends Activity {
     	return true;
     }
     
-    public boolean onOptionsItemSelected(MenuItem item) {
-    	// I am pretty sure item.getTile().equal(x) is not the proper way
-    	// to do this, but there have been worse sins committed.    	
+    public boolean onOptionsItemSelected(MenuItem item) { 	
     	if (item.getTitle().equals("Reset")) {
     		vm.exit();
     		vm = new RhinoVm();
